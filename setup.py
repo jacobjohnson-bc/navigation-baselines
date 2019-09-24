@@ -17,6 +17,7 @@ setup(
         'sparse_rrt @ git+https://github.com/jacobjj/sparse_rrt.git@master#egg=sparse_rrt-0.0.2',
         'cairosvg==2.4.2',
         'requests==2.22.0',
+	'cython'
     ],
     package_data={'': ['input']},
     include_package_data=True,

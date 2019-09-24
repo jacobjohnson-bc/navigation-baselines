@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-from Cython.Build import cythonize
 
 setup(
     name='sst_wrapper',
@@ -17,7 +16,6 @@ setup(
         'sparse_rrt @ git+https://github.com/jacobjj/sparse_rrt.git@master#egg=sparse_rrt-0.0.2',
         'cairosvg==2.4.2',
         'requests==2.22.0',
-	'cython'
     ],
     package_data={'': ['input']},
     include_package_data=True,
@@ -31,5 +29,4 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
     packages=find_packages(),
-    ext_modules=cythonize("sst_wrapper/utils/distance_function.pyx"),
 )
